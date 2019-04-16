@@ -1,5 +1,5 @@
 var express = require("express");
-var logger = require("morgan");
+//var logger = require("morgan");
 var mongoose = require("mongoose");
 var path = require("path")
 var axios = require("axios");
@@ -14,7 +14,7 @@ var app = express();
 
 
 // Use morgan logger for logging requests
-app.use(logger("dev"));
+//app.use(logger("dev"));
 // Parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
